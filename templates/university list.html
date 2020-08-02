@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <table class="table">
+        <thead class="thead-inverse">
+        <tr>
+            <th>Universities</th>
+            <th>Team name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for team in teams %}
+            <tr>
+            <td >
+                <a href="{% url 'teamDetails' name=team.name %} ">{{ team.university }}</a>
+            </td>
+            <td class="align-middle">
+                {{ team.name }}
+            </td>
+            <td></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+  <p>
+    You are now at the home page of Technothalon!
+  </p>
+  <p>
+    Click the below button to register:
+  </p>
+  <a href="{% url 'register' %}" class="btn btn-info" role="button">Register</a>
+  <p></p>
+  <p>
+    Click the below button to view registerd universities:
+  </p>
+  <a href="{% url 'universities' %}" class="btn btn-info" role="button">Universities</a>
+{% endblock %}

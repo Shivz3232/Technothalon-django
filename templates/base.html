@@ -1,0 +1,17 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teachnothalon</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <ol class="breadcrumb my-4">
+        <li class="breadcrumb-item active">Welcome to Teachnothalon</li>
+      </ol>
+        {% block content %}
+        {% endblock %}
+    </div>
+  </body>
+</html>
